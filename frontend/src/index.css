@@ -1,0 +1,242 @@
+/* layout */
+:root {
+    --primary: #1aac21;
+    --error: #e7192ae1;
+    --bg: #e9ecef;
+}
+body {
+    background: #e9ecef;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    z-index: 5;
+    height: 5rem;
+    background: #1a5a96;
+    --bg-secondary: #1a5a96;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.pages {
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+div.home {
+    width: 95%;
+    margin: auto;
+}
+
+/* above table items */
+div.top {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+div.create-prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #afe9b2;
+}
+
+button.create-prod-btn {
+    background-color: #ffe46c;
+    border: none;
+    padding: 1rem;
+    overflow: hidden;
+    font-weight: 600;
+    /* color: #7e7e7e; */
+}
+
+button.create-prod-btn:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    color: white;
+}
+
+p.count {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Product Table */
+table {
+    width: 100%;
+    background-color: #e9ecef;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
+
+th,
+td {
+    padding: 0.8rem;
+    text-align: left;
+}
+
+th {
+    background-color: #cccaca;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+}
+
+td {
+    font-size: 16px;
+}
+
+table tr:nth-child(even) {
+    background: #f3f3f3;
+}
+table tr:nth-child(odd) {
+    background: white;
+}
+
+/* Create Product Modal */
+label,
+input {
+    display: flex;
+}
+input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form button {
+    background: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cancel {
+    background: var(--error);
+}
+
+/* Modal Background*/
+.create-product-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1;
+    left: 0;
+    top: -25%;
+    width: 100%;
+    height: 150%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.edit-product-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: -25%;
+    width: 100%;
+    height: 150%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+form {
+    margin: auto 5%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+div.modal-body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div.modal-btns {
+    align-items: right;
+    width: 100%;
+}
+
+div.radio-col {
+    display: inline-flex;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+input.radio {
+    padding: 10%;
+    margin: 0;
+}
+
+label .radio {
+    text-align: right;
+    clear: both;
+    float: left;
+    margin-right: 15px;
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-left: 1rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+div.search > * {
+    margin-left: 5px;
+}
+
+.search input {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+/* Edit Button */
+td.btn {
+    background-color: var(--bg);
+    padding: 0;
+    border-bottom: 1px solid white;
+}
+
+button.edit-btn {
+    background-color: var(--bg);
+    border: none;
+    padding: 1rem;
+    overflow: hidden;
+    font-weight: 600;
+    color: #7e7e7e;
+}
+
+button.edit-btn:hover {
+    background-color: #fcda45;
+    cursor: pointer;
+    color: black;
+}

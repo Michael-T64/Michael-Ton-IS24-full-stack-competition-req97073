@@ -6,7 +6,7 @@ Instructions:
 
 2) In both the frontend and backend terminals run "npm install" to install all necessary node modules
 
-3) In the backend terminal run "node server.json" to initialize the backend.
+3) In the backend terminal run "node server.js" to initialize the backend.
 
 4) In the frontend terminal run "npm run start" to initialize the frontend.
 
